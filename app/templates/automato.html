@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block title %} {{ super() }} Automato {% endblock %}
+{% block content %}
+<div class="Div-automato column letters">
+    <img src="/static/img/automate.jpeg" alt="Automato" class="img-automato">
+    <h1 class="titulo">Automato Finito</h1>
+    <form class="form-automato" method="POST">
+        <label for="fSequencia">Insira uma sequencia binaria que comece e acabe com 0:</label><br><br>
+        <input type="text" id="fSequencia" name="fSequencia" />
+        <input type="submit" value="Verificar"/>
+        {% if resultado %}
+        <p class="aut">{{resultado}}</p>
+        {% endif %}
+    </form>
+
+</div> 
+    {% endblock %}

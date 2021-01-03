@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="icon" href="/static/img/favicon-32x32.png" type="image">
+    <style>
+        html,body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    </style>
+    <title>{% block title %}Projeto:{% endblock %}</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item Header letters">           
+            <div class="item Menu">
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>  
+                    <div class="div-nav-links">
+                        <a class="nav-links" href="intro">Introdução</a>
+                        <a class="nav-links" href="automato">Automato</a>
+                        <a class="nav-links" href="Webscrapping">Webscrapping</a>
+                        <a class="nav-links" href="Final">babações</a>
+                    
+                    </div>
+                </div>
+            </div>
+            <span id='title'>Projeto Final</span> 
+        </div>
+        <div class="item Main" id="main">
+                {% block content %}
+                {% endblock %}
+        </div>
+        <div class="Footer">
+            Universidade Lusíada - Compiladores - Paulo Sousa ©
+        </div>
+    </div>
+</body>
+</html>

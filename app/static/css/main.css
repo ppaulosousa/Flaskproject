@@ -16,13 +16,14 @@
     font-size: 36px;
     text-shadow: 2px 2px 4px red;
     grid-area: header;
-    display: inline-block;
+    display: flex;
     background-color: black;
+    justify-content: space-around;
 }
 
-#title {
+/* #title {
     float: center;
-}
+} */
 .Menu { 
     background-color: black;
     float: left;
@@ -157,5 +158,10 @@
 #img-comp {
     width: 50%;
     margin: auto;
+    align-self: center;
+}
+#img-bs4 {
+    margin: auto;
+    width: 30%;
     align-self: center;
 }

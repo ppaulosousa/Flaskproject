@@ -1,20 +1,20 @@
 .item {
-    background-color: white;
+    /* background-color: black; */
 }
 
 .letters{
-    color: gainsboro;
+    color: black;
 }
 .column {
     flex-direction: column;
     text-align: center;
 }
 .Header {
-    font-family: Rockwell;
+    font-family: Arial;
     text-align: center;
     color: white;
     font-size: 36px;
-    text-shadow: 2px 2px 4px white;
+    text-shadow: 2px 2px 4px red;
     grid-area: header;
     display: inline-block;
     background-color: black;
@@ -47,29 +47,29 @@
 .div-nav-links {
     display: none;
     position: absolute;
-    background-color: darkslategray;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: black;
 }
 .nav-links{
     font-size: 5vh;
-    color: black;
+    color: white;
     padding: 7px 8px;
     text-decoration: none;
     display: block;
 }
 .nav-links:hover {
     background-color: #f1f1f1;
+    
 }
 .dropdown:hover .div-nav-links{
     display: block;
 }
 .dropdown:hover .dropbtn{
     background-color: gray;
+    
 }
 
 .Main { 
-    background-color: #3e3636;
+    /* background-color: #3e3636; */
     grid-area: main;
     display: block;
     overflow: auto;
@@ -137,10 +137,11 @@
 
 }
 .img-automato{
-    width: 50%;
+    width: 60%;
     align-self: center;
     border-radius: 30%;
     padding: 5px;
+    background-color:black;
 }
 
 .form-automato {
@@ -151,4 +152,10 @@
 .aut {
     text-align: center;
     font-size: 32px;
+}
+
+#img-comp {
+    width: 50%;
+    margin: auto;
+    align-self: center;
 }

@@ -12,6 +12,9 @@ def index():
 @app.route('/intro')
 def intro():
   return render_template('intro.html')
+@app.route('/de')
+def de():
+  return render_template('de.html')
 @app.route('/automato', methods = ['POST', 'GET'])
 def automatofinito():
   if request.method == 'GET':
@@ -19,8 +22,6 @@ def automatofinito():
   else:
     out = afd.automato(request.form['fSequencia'])
     return render_template('automato.html', resultado = out)
-
-
 @app.route('/Final')
 def final():
   return render_template('Final.html')
@@ -33,9 +34,6 @@ def plot_png():
   output = io.BytesIO()
   FigureCanvas(fig).print_png(output)
   return Response(output.getvalue(), mimetype='image/png')
-
-
-
 
 if __name__ == '__main__':
   app.run(debug=True)

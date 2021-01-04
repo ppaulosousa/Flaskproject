@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block title %} {{ super() }} RegEx {% endblock %}
+{% block content %}
+<div class="Div-regEX column letters">
+    <img src="/static/img/regEX.jpeg" alt="regEX" class="img-regEX">
+    <h3 class="texto-reg">Todos codificados com <i>RegEx</i></h3>
+    <form class="form-regEX" method="POST">
+        <label for="fnome">Insira o seu nome:</label><br>
+        <input type="text" id="fnome" name="fnome" /><br><br>
+        <input type="submit" value="Verificar"/><br><br>
+        <label for="ftelefone">Insira seu telefone:</label><br>
+        <input type="text" id="ftelefone" name="ftelefone" /><br><br>
+        <input type="submit" value="Verificar"/><br><br>
+        <label for="fendereco">Insira seu e-mail:</label><br>
+        <input type="text" id="fendereco" name="fendereco" /><br><br>
+        <input type="submit" value="Verificar"/><br><br>
+        <label for="fpassword">Insira uma Password forte:</label><br>
+        <input type="text" id="fpassword" name="fpassword" /><br><br>
+        <input type="submit" value="Verificar"/><br><br>
+    </form>
+</div> 
+    {% endblock %}

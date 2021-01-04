@@ -7,6 +7,7 @@ from app.models import webscrapping, afd
 
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
 @app.route('/intro')
